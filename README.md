@@ -10,11 +10,12 @@ Before embarking on my journey as a data scientist, I was a product manager and 
  
 
 ## Data Collection
-I scraped 10,000 articles from PR Newswire. An example article is below. For each article, I stored relevant information in a mongoDB including:
+I scraped 20,000+ images and text from basenotes.com. An example perfuke is below. For each perfume, I stored relevant information in a mongoDB including:
 
-1. Headline
-2. Time
-3. Date
-4. Location
-5. Images
-6. Body Text
+1. Name
+2. Year
+3. Gender
+4. Availability
+5. House
+6. About
+7. Fragrance notes
