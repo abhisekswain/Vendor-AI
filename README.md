@@ -5,7 +5,7 @@ Vendor-AI is a webapp designed for vendors and bulk-sellers at e-commerce sites.
 ![alt text](https://github.com/abhisekswain/vendor-ai/blob/master/Vendor-AI_screen_shot.png)
 
 ## Motivation
-Before embarking on my journey as a data scientist, I was a product manager and had to create product pages for my products. I found the process to be time-consuming and cumbersome. The same sentiment has been echoed product managers I talked to at amazon and ebay, specially those who deal with vendors and bulk sellers. Vendors and bulk sell a large number of products on these sites and have to spend considerable amount of time creating creating a product page for each product.Therefore, I set out to build a simple intuitive UI that accomplished this goal, by allowing the user to upload a picture of the product and curating a product page thus automating the selling process.
+Before embarking on my journey as a data scientist, I was a product manager and had to create product pages for my products. I found the process to be time-consuming and cumbersome. The same sentiment has been echoed product managers I talked to at amazon and ebay, specially those who deal with vendors and bulk sellers. Vendors and bulk sell a large number of products on these sites and have to spend considerable amount of time creating creating a product page for each product. Therefore, I set out to build a simple intuitive UI that accomplished this goal, by allowing the user to upload a picture of the product and curating a product page thus automating the selling process.
 
  
 
