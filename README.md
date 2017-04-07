@@ -28,6 +28,9 @@ I scraped 20,000+ images and text from basenotes.com. An example perfuke is belo
 
 
 ## Tools Used  
-Data Collection  
+Data Collection/Web Scraping  
   
 * Scrapy
+* Python
+
+
