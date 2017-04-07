@@ -42,7 +42,7 @@ Data Storage
 Modelling/Image Processing  
 
 * OpenCV
-* numpy
+* Numpy
 * Pandas
 * Scikit-learn
 * Pickle
