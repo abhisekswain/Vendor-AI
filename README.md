@@ -23,7 +23,9 @@ I scraped 20,000+ images and text from basenotes.com. An example perfuke is belo
 ![alt text](https://github.com/abhisekswain/vendor-ai/blob/master/sample_page.png)
 
 
+## Feature Engineering  
 
+The goal was to 
 
 
 
