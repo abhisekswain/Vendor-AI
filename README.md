@@ -33,4 +33,8 @@ Data Collection/Web Scraping
 * Scrapy
 * Python
 
+Data Storage  
+
+* PyMongo
+* MongoDB
 
