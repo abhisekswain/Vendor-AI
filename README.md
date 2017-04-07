@@ -37,4 +37,14 @@ Data Storage
 
 * PyMongo
 * MongoDB
+* Json
+
+Modelling/Image Processing
+
+* OpenCV
+* numpy
+* Pandas
+* Scikit-learn
+* Pickle
+
 
