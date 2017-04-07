@@ -39,7 +39,7 @@ Data Storage
 * MongoDB
 * Json
 
-Modelling/Image Processing
+Modelling/Image Processing  
 
 * OpenCV
 * numpy
@@ -47,4 +47,14 @@ Modelling/Image Processing
 * Scikit-learn
 * Pickle
 
+Plotting  
 
+ * Matplotlib
+ * Seaborn
+ 
+ Web App  
+ 
+ * Flask
+ * HTML
+ * CSS
+ * JavaScript
