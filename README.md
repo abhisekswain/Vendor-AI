@@ -23,9 +23,9 @@ I scraped 20,000+ images and text from basenotes.com. An example perfuke is belo
 ![alt text](https://github.com/abhisekswain/vendor-ai/blob/master/sample_page.png)
 
 
-## Feature Engineering  
+## Image codebook creation
 
-The goal was to 
+Raw pixel data is hard to use for machine learning, and for comparing images in general. Keypoints are the same thing as interest points. They are spatial locations, or points in the image that define what is interesting or what stand out in the image. The reason why keypoints are special is because no matter how the image changes... whether the image rotates, shrinks/expands, is translated (all of these would be an affine transformation by the way...) or is subject to distortion (i.e. a projective transformation or homography), you should be able to find the same keypoints in this modified image when comparing with the original image.
 
 
 
