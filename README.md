@@ -24,10 +24,20 @@ I scraped 20,000+ images and text from basenotes.com. An example perfuke is belo
 
 ## Methodology
 
+Vendor-AI works by matching the uploaded images to a databse of images and returning the resultant image and text. The process works as follows: 
+
+1. Create codebook of images where each image in represented by a histogram  
+
+2. Upload query image and compare histogram of query image to histograms in codeboook  
+
+3. Return matched image and text for display on webapp  
 
 ## Image codebook creation
 
 Raw pixel data is hard to use for machine learning, and for comparing images in general. Keypoints are the same thing as interest points. They are spatial locations, or points in the image that define what is interesting or what stand out in the image. The reason why keypoints are special is because no matter how the image changes... whether the image rotates, shrinks/expands, is translated (all of these would be an affine transformation by the way...) or is subject to distortion (i.e. a projective transformation or homography), you should be able to find the same keypoints in this modified image when comparing with the original image.
+
+What makes keypoints different between frameworks is the way you describe these keypoints. These are what are known as descriptors. Each keypoint that you detect has an associated descriptor that accompanies it. Some frameworks only do a keypoint detection, while other frameworks are simply a description framework and they don't detect the points. There are also some that do both - they detect and describe the keypoints. SIFT and SURF are examples of frameworks that both detect and describe the keypoints.
+
 
 
 
