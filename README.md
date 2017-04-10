@@ -42,6 +42,7 @@ For each image in my database, I used k-means clustering to cluster the descript
 
 ## Content based image retrieval  
 
+Content-based image retrieval (CBIR) deals with the problem of retrieving visually similar images from a (large) database of images.For high-level queries, like finding matching images, it is not feasible to do a full comparison (for example using feature matching) between a query image and all images in the database. It would simply take too much time to return any results if the database is large. Thus, we use the image codebook and calculate the chi-sqaured distance between the queiried image histogram and the image codebook histograms. The top 200 matches were filtered out and the to obatin the amost accurate results, I did matched indivisual descriptors to get the final result.
 
 
 ## Tools Used  
