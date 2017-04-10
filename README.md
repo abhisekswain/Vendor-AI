@@ -34,10 +34,11 @@ Vendor-AI works by matching the uploaded images to a databse of images and retur
 
 ## Image codebook creation
 
-Raw pixel data is hard to use for machine learning, and for comparing images in general. Keypoints are the same thing as interest points. They are spatial locations, or points in the image that define what is interesting or what stand out in the image. The reason why keypoints are special is because no matter how the image changes... whether the image rotates, shrinks/expands, is translated (all of these would be an affine transformation by the way...) or is subject to distortion (i.e. a projective transformation or homography), you should be able to find the same keypoints in this modified image when comparing with the original image.
+Raw pixel data is hard to use for machine learning, and for comparing images in general. I used a technique called SIFT (Scale Invaraint Feature Transformation) to decompose an image into keypoints and descriptors. Keypoints are the same thing as interest points. They are spatial locations, or points in the image that define what is interesting or what stands out in the image. The reason why keypoints are special is because no matter how the image changes... whether the image rotates, shrinks/expands, is translated or is subject to distortion (i.e. a projective transformation or homography), you should be able to find the same keypoints in this modified image when comparing with the original image.
 
 What makes keypoints different between frameworks is the way you describe these keypoints. These are what are known as descriptors. Each keypoint that you detect has an associated descriptor that accompanies it. Some frameworks only do a keypoint detection, while other frameworks are simply a description framework and they don't detect the points. There are also some that do both - they detect and describe the keypoints. SIFT and SURF are examples of frameworks that both detect and describe the keypoints.
 
+For each image in my database, I used k-means clustering to cluster the descriptors for each of the 20,000 scrpaed images. Then a codebook of histograms was created indicating which cluster centers are nearest in terms of Euclidean disatnce to each image.
 
 
 
