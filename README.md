@@ -50,6 +50,8 @@ I tested my matching algorithm with 30 perfume bottle images taken froma  cell p
 
 An example video of the working app is below. Click on the image to check it out!
 
+[![Vendor-AI Demo](http://img.youtube.com/vi/eVX4VQPxUX0/maxresdefault.jpg)](https://www.youtube.com/watch?v=eVX4VQPxUX0 "PinkSlipper Demo")
+
 
 
 ## Tools Used  
