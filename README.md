@@ -48,10 +48,6 @@ Content-based image retrieval (CBIR) deals with the problem of retrieving visual
 
 I tested my matching algorithm with 30 perfume bottle images taken froma  cell phone and was able to get accurate matches for 21. The algorithm finds is unable to match pictures of bottles that are transparent and have not color or distinct shape. The model was then saved, and all unlabelled, text for the matching image was piped through it. A Flask webapp was built to display the product page.
 
-An example video of the working app is below. Click on the image to check it out!
-
-
-
 ## Tools Used  
 Data Collection/Web Scraping  
   
