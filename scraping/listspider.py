@@ -16,7 +16,7 @@ class PerfumeSpider(scrapy.Spider):
             yield {
             'link' :  response.xpath('//table/tr/td/a/@href').extract()
         }
-        url = response.xpath('//a[contains(@title, "Next")]/ç@href').extract_first()
+        url = response.xpath('//a[contains(@title, "Next")]/@href').extract_first()
         next_page = url
         if next_page is not None:
             next_page = response.urljoin(next_page)
