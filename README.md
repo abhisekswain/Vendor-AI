@@ -38,15 +38,15 @@ Raw pixel data is hard to use for machine learning, and for comparing images in 
 
 What makes keypoints different between frameworks is the way you describe these keypoints. These are what are known as descriptors. Each keypoint that you detect has an associated descriptor that accompanies it. Some frameworks only do a keypoint detection, while other frameworks are simply a description framework and they don't detect the points. There are also some that do both - they detect and describe the keypoints. SIFT and SURF are examples of frameworks that both detect and describe the keypoints.
 
-For each image in my database, I used k-means clustering to cluster the descriptors for each of the 20,000 scrpaed images. Then a codebook of histograms was created indicating which cluster centers are nearest in terms of Euclidean disatnce to each image.
+For each image in my database, I used k-means clustering to cluster the descriptors for each of the 20,000 scraped images. Then a codebook of histograms was created indicating which cluster centers are nearest in terms of Euclidean distance to each image.
 
 ## Content based image retrieval  
 
-Content-based image retrieval (CBIR) deals with the problem of retrieving visually similar images from a (large) database of images.For high-level queries, like finding matching images, it is not feasible to do a full comparison (for example using feature matching) between a query image and all images in the database. It would simply take too much time to return any results if the database is large. Thus, we use the image codebook and calculate the chi-sqaured distance between the queiried image histogram and the image codebook histograms. The top 200 matches were filtered out and the to obatin the amost accurate results, I did matched indivisual descriptors to get the final result.
+Content-based image retrieval (CBIR) deals with the problem of retrieving visually similar images from a (large) database of images.For high-level queries, like finding matching images, it is not feasible to do a full comparison (for example using feature matching) between a query image and all images in the database. It would simply take too much time to return any results if the database is large. Thus, we use the image codebook and calculate the chi-squared distance between the queiried image histogram and the image codebook histograms. The top 200 matches were filtered out and to obtain the most accurate results, I matched individual descriptors to get the final result.
 
 ## Results and conclusion
 
-I tested my matching algorithm with 30 perfume bottle images taken froma  cell phone and was able to get accurate matches for 21. The algorithm finds is unable to match pictures of bottles that are transparent and have not color or distinct shape. The model was then saved, and all unlabelled, text for the matching image was piped through it. A Flask webapp was built to display the product page.
+I tested my matching algorithm with 30 perfume bottle images taken from a  cell phone and was able to get accurate matches for 21. The algorithm finds is unable to match pictures of bottles that are transparent and have no distinct shape. The model was then saved, and all unlabelled, text for the matching image was piped through it. A Flask webapp was built to display the product page.
 
 ## Tools Used  
 Data Collection/Web Scraping  
