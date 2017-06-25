@@ -50,7 +50,7 @@ I tested my matching algorithm with 30 perfume bottle images taken from a  cell 
 
 An example video of the working app is below. Click on the image to check it out!
 
-[![Vendor_AI Demo](https://www.youtube.com/upload_thumbnail?v=0VuWM9HelWo&t=hqdefault&ts=1498418354751) (https://youtu.be/0VuWM9HelWo)
+[![Vendor_AI Demo](https://www.youtube.com/upload_thumbnail?v=0VuWM9HelWo&t=hqdefault&ts=1498418354751)](https://youtu.be/0VuWM9HelWo)
 
 
 ## Tools Used  
